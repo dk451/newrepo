@@ -1,0 +1,8 @@
+---
+- name: display message
+  hosts: all
+  remote_user: admin
+  tasks:
+    - name: display message hello world
+      ansible.builtin.debug:
+        msg: "hello world"
